@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House</title>
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome icon link -->
+    <script
+      src="https://kit.fontawesome.com/1a38e55675.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind and daisyui cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css custom styles -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- custom styles -->
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <!-- banner section -->
+      <section class="">
+        <div class="hero">
+          <div
+            class="hero-content flex-col lg:flex-row gap-16 px-4 md:px-10 lg:px-10"
+          >
+            <div>
+              <h1 class="text-7xl font-extrabold">
+                It's good <br />
+                tea time at <br />
+                The Tea House
+              </h1>
+              <p class="text-lg font-medium py-8">
+                Tea and Botanical Solutions Supplier Give Optimum Satisfaction
+                To Your Taste Buds.
+              </p>
+              <button class="btn btn-primary text-xl font-bold">
+                Explore More
+              </button>
+            </div>
+            <div>
+              <img src="images/banner.png" />
+              <!-- rating badge -->
+              <div
+                class="-mt-24 flex items-center justify-center gap-4 bg-white p-6 rounded-xl drop-shadow-lg w-72"
+              >
+                <i class="fa-solid fa-star text-amber-400 text-5xl"></i>
+                <div>
+                  <h4 class="text-3xl font-extrabold">5.00</h4>
+                  <p class="text-lg font-semibold">Trust Pilot Ratings</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="container mx-auto"></main>
+  </body>
+</html>
